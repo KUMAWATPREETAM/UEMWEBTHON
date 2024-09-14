@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --purple-color: #3d5998;
+}
+
+/* header  */
+/* nav1  */
+.nav1 {
+  position: fixed;
+  top: 0;
+  background-color: var(--purple-color); /*!important;*/
+  color: var(--primary-color);
+  width: 100%;
+  height: 2.5;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav1 a {
+  color: var(--primary-color);
+}
+
+.nav1 a i {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+/* nav2  */
+.nav2 {
+  width: 100%;
+  position: absolute;
+  top: 2.5rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 2px #000;
+  /* z-index: 20; */
+}
+
+.nav-bar {
+  top: -2rem;
+}
+
+.logo {
+  width: 10rem;
+  height: auto;
+  position: relative;
+  left: 5rem;
+}
+
+.logo img {
+  width: 10rem;
+  height: auto;
+}
+
+/* links */
+.links_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  left: 5rem;
+  margin-left: 1rem;
+}
+
+.links_1 li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.links_1 li a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.links_1 li a:hover {
+  border: 2px solid #3d5998;
+  border-radius: 1rem;
+}
+
+.bars {
+  position: absolute;
+  right: 5rem;
+  font-size: 2rem;
+  display: none;
+}
+
+.bars a {
+  color: var(--secondary-color);
+}
+
+/* hero section  */
+
+.hero {
+  position: absolute;
+  top: 9rem;
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* responsiveness */
+
+@media (max-width: 1100px) {
+  .bars {
+    display: block;
+    right: 2rem;
+  }
+
+  .logo {
+    left: 2rem;
+  }
+
+  .logo img {
+    width: 5rem;
+    left: 2rem;
+  }
+
+  .nav1 {
+    display: none;
+  }
+  .nav2 {
+    top: 1rem;
+  }
+
+  .links_1 {
+    display: none;
+  }
+
+  .hero {
+    top: 4rem;
+  }
+
+  
+}
